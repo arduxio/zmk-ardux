@@ -261,7 +261,9 @@
 		 * 3 key combos
 		 *****************************************/
 		combo_esc              { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&kp ESC>; };
-		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
+		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_N KEY_O>; bindings = <&tog LAYER_ID_NAVIGATION>; };
+		combo_up               { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&kp UP>; };
+		combo_down             { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_T KEY_N>; bindings = <&kp DOWN>; };
 
 		combo_m            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_I KEY_O>; bindings = <&kp M>; };
 		combo_d            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp D>; };
