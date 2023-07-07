@@ -1,13 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: zmk-ardux
-      url-base: https://github.com/arduxio
+    - name: urob
+      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: ae8299edb3d638f1332475b1da0fdf40afa43fe4
+      remote: urob
+      revision: main
       import: app/west.yml
   self:
     path: config

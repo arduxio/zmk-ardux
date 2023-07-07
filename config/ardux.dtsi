@@ -151,9 +151,9 @@
 			label = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&kp C_MUTE &kp INS   &kp C_VOL_UP  &none               \
+				&kp C_MUTE &kp INS   &kp C_VOL_UP  &mo LAYER_ID_CUSTOM \
 				MIDDLE_NONES                                           \
-				&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
+				&sk RSHFT  &kp PSCRN &kp C_VOL_DN  &none			   \
 				TRAILING_NONES                                         \
 			>;                                                         \
 		};
@@ -339,9 +339,9 @@
 			label = "ARDUX";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_S
 				MIDDLE_NONES
-				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &kp ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
+				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &kp ARDUX_BASE_I     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_O
 				TRAILING_NONES
 				#if defined CUSTOM_THUMB
 				CUSTOM_THUMB
@@ -353,9 +353,9 @@
 			label = "Number";
 			bindings = <
 				LEADING_NONES
-				&kp N1                                              &kp N2    &kp N3    &mo LAYER_ID_NUMBERS
+				&kp N1                                              &kp N2    &kp N3    &none
 				MIDDLE_NONES
-				&kp N4                                              &kp N5    &kp N6    &none
+				&kp N4                                              &kp N5    &kp N6    &mo LAYER_ID_NUMBERS
 				TRAILING_NONES
 			>;
 		};
