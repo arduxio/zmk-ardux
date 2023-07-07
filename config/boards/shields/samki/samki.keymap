@@ -1,0 +1,31 @@
+/*
+ * Copyright (c) 2021 Mike "KemoNine" Crosson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+// Left/Right
+#define ARDUX_RIGHT 1
+
+// ARTS Row
+#define KEY_A 0
+#define KEY_R 1
+#define KEY_T 2
+#define KEY_S 3
+// EYIO Row
+#define KEY_E 4
+#define KEY_Y 5
+#define KEY_I 6
+#define KEY_O 7
+
+// Define Offsets
+#define LEADING_NONES NONE(0,0,0)
+#define MIDDLE_NONES NONE(0, 0, 0)
+#define TRAILING_NONES NONE(0, 0, 0)
+
+// Include main ardux.io keymap
+#include "../../../ardux.dtsi"

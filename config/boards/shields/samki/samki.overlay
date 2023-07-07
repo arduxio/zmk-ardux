@@ -1,0 +1,52 @@
+/*
+ * Copyright (c) 2021 Mike "KemoNine" Crosson
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <dt-bindings/zmk/matrix_transform.h>
+
+&pro_micro_i2c {
+	status = "okay";
+
+	oled: ssd1306@3c {
+		compatible = "solomon,ssd1306fb";
+		reg = <0x3c>;
+		label = "DISPLAY";
+		width = <128>;
+		height = <32>;
+		segment-offset = <0>;
+		page-offset = <0>;
+		display-offset = <0>;
+		multiplex-ratio = <31>;
+		segment-remap;
+		com-invdir;
+		com-sequential;
+		prechargep = <0x22>;
+	};
+};
+
+/ {
+	chosen {
+		zmk,kscan = &kscan0;
+		zephyr,display = &oled;
+	};
+
+	kscan0: kscan_0 {
+		compatible = "zmk,kscan-gpio-direct";
+
+		label = "KSCAN";
+
+		input-gpios
+			= <&pro_micro_a 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_a 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_a 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_a 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_d 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_d 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_d 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			, <&pro_micro_d 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+			;
+
+	};
+};
