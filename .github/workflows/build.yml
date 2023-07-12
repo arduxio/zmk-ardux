@@ -67,6 +67,8 @@ jobs:
             shield: cradio_ardux_right
           - board: nice_nano_v2
             shield: cradio_ardux_thumb_right
+          - board: nice_nano_v2
+            shield: handler
     steps:
       - name: Checkout
         uses: actions/checkout@v2

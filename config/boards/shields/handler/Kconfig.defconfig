@@ -1,0 +1,6 @@
+if SHIELD_HANDLER
+
+config ZMK_KEYBOARD_NAME
+    default "Handler"
+
+endif
