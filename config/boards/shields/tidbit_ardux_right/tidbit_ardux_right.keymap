@@ -18,7 +18,7 @@
 #define KEY_S 4
 // EYIO Row
 #define KEY_E 12
-#define KEY_Y 11
+#define KEY_N 11
 #define KEY_I 10
 #define KEY_O 9
 
