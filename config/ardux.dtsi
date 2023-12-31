@@ -261,6 +261,8 @@
 		 *****************************************/
 		combo_esc              { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_O>; bindings = <&kp ESC>; };
 		combo_layer_navigation { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_E KEY_I>; bindings = <&tog LAYER_ID_NAVIGATION>; };
+		combo_left             { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_R KEY_O>; bindings = <&kp LEFT>; };
+		combo_right            { timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_R KEY_E>; bindings = <&kp RIGHT>; };
 
 		combo_m            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp M>; };
 		combo_d            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp D>; };
