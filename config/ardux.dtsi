@@ -87,12 +87,9 @@
  * In order to make this keymap flexible, you must setup the number of &none "offsets" to use
  * The defines below should be set in your LOCAL keymap and using the above "NONE([hundreds],[tens],[ones])" macro for filling in the gaps
 *****************************************/
-#define LEADING_NONES NONE(0,0,6)
-#define MIDDLE_NONES NONE(0,0,1)
-#define TRAILING_NONES NONE(0,0,6)
-// #define LEADING_NONES NONE(0, 1, 0)
-// #define MIDDLE_NONES NONE(0, 0, 3)
-// #define TRAILING_NONES NONE(0, 1, 0)
+#define LEADING_NONES NONE(0, 1, 0)
+#define MIDDLE_NONES NONE(0, 0, 3)
+#define TRAILING_NONES NONE(0, 1, 0)
 // #define BIG_LEADING_NONES NONE(0, 0, 0)
 // #define BIG_BETWEEN_ROW_ONE_TWO_NONES NONE(0, 0, 0)
 // #define BIG_BETWEEN_ROW_TWO_THREE_NONES NONE(0, 0, 0)
