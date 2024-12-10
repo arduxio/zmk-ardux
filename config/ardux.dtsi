@@ -228,7 +228,7 @@
 		combo_layer_functions { key-positions = <KEY_F_TOP KEY_F_BOTTOM>; bindings = <&sl LAYER_ID_BIG_FUNCTION>; };
 		#endif
 		combo_enter      { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp ENTER>; };
-		combo_control    { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&sk LCTRL>; };
+		combo_control    { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&mht LCTRL LCTRL>; };
 		combo_gui        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_S>; bindings = <&sk LGUI>; };
 		combo_alt        { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_S>; bindings = <&sk LALT>; };
 		combo_backspace  { timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_R>; bindings = <&kp BACKSPACE>; };
@@ -275,7 +275,7 @@
 		 *****************************************/
 		combo_tab             { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp TAB>; };
 		combo_space           { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp SPACE>; };
-		combo_shift           { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&sk LSHFT>; };
+		combo_shift           { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_R KEY_T KEY_S>; bindings = <&mht LSHFT LSHFT>; };
 		combo_layer_bt_select { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
 		combo_bt_clr          { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
 
@@ -308,6 +308,8 @@
 		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl_alt_kp";
 						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&sk>, <&sk>; };
+		mht: mod_hold_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; tapping-term-ms = <500>;
+						flavor = "hold-preferred"; bindings = <&kp>, <&sk>; hold-while-undecided-linger;};
 	};
 };
 
