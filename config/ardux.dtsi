@@ -43,7 +43,7 @@
  *   - Update/adjust the key positions using your boards keymap 
  *     - See below for additional details
  *   - YOU MUST SET THE FOLLOWING CONFIG VALUES FOR THIS SETUP TO WORK PROPERLY IN YOUR BOARDS .conf FILE
- *     - CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY=16
+ *     - CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY=24
  *     - CONFIG_ZMK_COMBO_MAX_KEYS_PER_COMBO=8
  *     - CONFIG_ZMK_COMBO_MAX_PRESSED_COMBOS=8
  *****************************************/
