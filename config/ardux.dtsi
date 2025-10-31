@@ -138,6 +138,12 @@
 &sl { 
 	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
 };
+&mmv {
+	time-to-max-speed-ms = <0>;
+};
+&msc {
+	time-to-max-speed-ms = <0>;
+};
 
 /*****************************************
  * Define custom layer
